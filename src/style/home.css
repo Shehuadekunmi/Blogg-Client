@@ -1,0 +1,183 @@
+.shehu-home{
+    margin: 50px 0px;
+}
+
+.shehu-home h1{
+    color: var(--black-text-colour, #2B2A2A);
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 81.6px */
+letter-spacing: -1.36px;
+}
+
+.con button{
+    background: var(--b1) !important;
+}
+
+.care button{
+    background:  var(--b2) !important;
+}
+
+.sport button{
+    background: var(--b3) !important;
+}
+
+.shehu-home p{
+    color: var(--black-text-colour, #2B2A2A);
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 25.2px */
+}
+
+.shehu-home button{
+    display: flex;
+    margin: 5px 0px;
+padding: 7px 12px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+border: none;
+color: #fff;
+background: var(--primary, #26BDD2);
+}
+
+.shehu-home img{
+    width:  100%;
+}
+
+.shehu-home-1 img{
+    width: 100%;
+}
+
+.shehu-home-1 button{
+    display: flex;
+    /* padding: 7px 9px; */
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 30px;
+    width: 90px !important;
+    border-radius: 5px;
+    background: var(--b4);
+}
+
+.shehu-home-home p{
+    font-size: 10px;
+}
+
+.shehu-home-1 h1{
+    color: var(--black-text-colour, #2B2A2A);
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.shehu-home-1 .pp{
+    color: var(--black-text-colour, #2B2A2A);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 133%; /* 18.62px */
+}
+
+.shehu-home-2 img{
+    width: 30%;
+    height: 120px;
+}
+
+.shehu-home-2 h1{
+    font-size: 16px;
+    width: 100;
+}
+
+.shehu-home-2 p{
+    font-size: 10px;
+    width: 98%;
+}
+
+.shehu-ade{
+    width: 95%;
+}
+.shehu-ade p{
+    margin-top: 5px;
+}
+
+.shehu-ade button, .shehu-home-1 button{
+    color: #fff;
+}
+
+.w-7{
+    width:130px;
+}
+
+.w-7 span{
+    font-size: 11px !important;
+}
+
+@media (min-width:760px) {
+    .shehu-home img{
+        width: 50%;
+    }
+    .shehu-home-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    
+}
+
+@media (min-width:900px) {
+    .shehu-home{
+        margin: 100px 0px;
+    }
+
+    .shehu-home-center {
+        width: 33%;
+        margin: 0 auto;
+    }
+    .shehu-home h1{
+        font-size: 68px;
+        width: 95;
+    }
+    .shehu-home-home p{
+        font-size: 16px;
+    }
+    .trending, .shehu-home-2{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .shehu-ade p{
+        width: 50% !important;
+        font-size: 14px;
+    }
+    .w-7 span{
+        font-size: 14px !important;
+    }
+    .shehu-home-1 button{
+        font-size: 14p;
+    }
+    .shehu-sub-div p{
+        font-size: 16px;
+        width: 90%;
+    }
+    .shehu-sub-div h1{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .shehu-home-2 img{
+        width: 100%;
+        height: 200px !important;
+    }
+   
+    .shehu-home-1 button{
+        padding: 7px 9px;
+    }
+}

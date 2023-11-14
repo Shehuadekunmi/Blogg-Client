@@ -1,0 +1,62 @@
+.shehu-single{
+    width: 100%;
+}
+
+.shehu-single img{
+    width: 100%;
+    margin: 20px 0px;
+}
+.shehu-defense{
+    color: var(--black-text-colour, #2B2A2A);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.shehu-single-page{
+    font-size: 10px;
+    gap: 20px;
+}
+.shehu-single-page button{
+    border: none;
+    background: var(--bt);
+    border-radius: 5px;
+    color: #fff;
+    height: 20px;
+}
+
+.shehu-recommend h1{
+    color: var(--black-text-colour, #2B2A2A);
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+@media (min-width:760px) {
+
+    .shehu-single img{
+        width: 50%;
+        display: inline-block;
+        float: left;
+        padding: 10px;
+
+    }
+}
+
+@media (min-width:900px) {
+    .shehu-single-page{
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .shehu-single-page button{
+        height: 40px;
+    }
+
+    .shehu-single img{
+        padding-right: 20px;
+    }
+}

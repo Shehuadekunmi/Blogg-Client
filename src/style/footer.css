@@ -1,0 +1,91 @@
+.shehu-foot{
+    background: #000;
+}
+.shehu-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shehu-footer p{
+    font-weight: 400;
+}
+
+.img p{
+    font-size: 14px;
+    padding: 20px 0px;
+}
+
+.img form input{
+    display: flex;
+    width: 100%;
+padding: 7px 7px 7px 12px;
+align-items: center;
+border-radius: 39px;
+border: 1px solid var(--primary, #26BDD2);
+background: #000;
+
+}
+
+.img form input::placeholder{
+    color: #FFF !important;
+}
+
+.img form{
+    position: relative;
+    display: inline-flex;
+    width: 90%;
+}
+.img form button{
+    position: absolute;
+    top: 10px; right: 10px;
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 24px;
+border: none;
+background: var(--bt);
+}
+
+@media (min-width:760px) {
+
+    .shehu-foot{
+        display: flex;
+        justify-content: space-around;
+    }
+    .img{
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    .img form button{
+    left: 195px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .img form button{
+        font-size: 18px;
+        padding: 9px 19px;
+        }
+
+        .img form input{
+            padding: 17px 17px 15px 22px;
+        }
+    .shehu-footer p{
+        font-size: 18px;
+        
+    }
+    .img{
+        width: 30%;
+    }
+
+    .shehu-footer{
+        width: 50%;
+    }
+}

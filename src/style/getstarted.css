@@ -1,0 +1,172 @@
+.shehu-mobile{
+    display: none !important;
+}
+
+.shehu-sign-form{
+    background: rgba(247, 247, 247, 0.97);
+}
+
+.shehu-sign-form h1{
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.shehu-sign-form p{
+    color: #1E1E1E;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.shehu-sign-form input{
+    width: 95%;
+    border-radius: 5px;
+border: 1px solid #BABABA;
+margin: 0 5px ;
+}
+
+.shehu-sign-form button{
+    width: 95%;
+    background: var(--bt);
+    border: none;
+    margin: 0 5px;
+}
+
+.shehu-sign-form label{
+    color: #3E3E3E;
+    padding-left: 5px;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0 5px;
+}
+
+.shehu-sign-form ::placeholder{
+    color: #BABABA;
+padding-left: 5px;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.shehu-shehu-get{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+}
+.eye{
+    position: absolute;
+    right: 25px;
+    top: 5px;
+
+}
+
+.shehu-signin-hr{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.shehu-signin-hr img{
+  margin-top: 10px;
+    width: 200px;
+height: 1px;
+    background: #2B2A2A;
+    font-weight: bolder;
+}
+
+.shehu-sign-form h5{
+    color: #000;
+text-align: center;
+margin: 20px 0px;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.shehu-fb{
+    width: 100%;
+}
+
+.shehu-fb img{
+    width: 20%;
+    margin: 30px 20px;
+}
+@media (min-width:760px) {
+    .shehu-mobile{
+        display: block !important;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .eye{
+      top: 5px;
+      right: 40px;
+    
+    }
+    .shehu-mobile img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .shehu-sign-form{
+        width: 50%;
+        overflow: hidden;
+    }
+    .shehu-sign-form form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .shehu-sign-form input{
+        width: 90%;
+    }
+    .shehu-sign-form button{
+        width: 90%;
+        margin: 10px 0px;
+        margin-left: 5px;
+    }
+    .shehu-fb img{
+        width: 20% !important;
+        margin: 0 20px;
+    }
+}
+
+@media (min-width:900px) {
+    .shehu-signin-hr img{
+        width: 240px;
+    }
+
+    .shehu-mobile{
+        width: 50%;
+    }
+
+    .eye{
+        top: 10px;
+        right: 70px;
+    }
+    .shehu-fb img{
+        width: 30% !important;
+        margin: 0 20px;
+    }
+
+    .shehu-mobile img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .shehu-sign-form input{
+        height: 40px;
+    }
+
+    .shehu-sign-form{
+        width: 50%;
+        height: 100vh;
+        padding: 70px 0px;
+    }
+}

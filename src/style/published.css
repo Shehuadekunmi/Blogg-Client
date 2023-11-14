@@ -1,0 +1,225 @@
+.shehu-pub h1{
+    color: #2B2A2A;
+text-align: center;
+font-size: 41px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.shehu-pub p{
+    color: #2B2A2A;
+font-size: 16px;
+text-align: center;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.shehu-pub span{
+    color: #808080;
+margin: 0 10px;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+}
+
+/* .shehu-pro{
+    width: 95%;
+} */
+.shehu-pub img{
+    width: 50%;
+    margin: 0 50px;
+}
+
+.shehu-pub button{
+    width: 30%;
+    height: 30px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 8px;
+border: 1px solid var(--primary, #26BDD2);
+background: transparent;
+}
+
+.shehu-published{
+    margin-top: 30px;
+}
+
+.shehu-published button{
+    display: inline-flex;
+    border: none;
+    background: transparent;
+    color: #2B2A2A;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.shehu-published button:active{
+    display: flex;
+padding: 8px 18px;
+justify-content: center;
+align-items: center;
+border-radius: 15px 15px 0px 0px;
+background: var(--primary, #26BDD2);
+color: #fff;
+}
+
+.shehu-published img{
+    width: 100%;
+}
+
+.shehu-dot{
+    margin: 0 10px;
+    font-size: 40px;
+}
+.shehu-pro-pro p{
+    font-size: 10px !important;
+}
+
+.shehu-pro-pro button{
+    font-size: 10px;
+    display: flex;
+padding: 7px 9px;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+background: var(--bt);
+color: #fff;
+}
+
+.shehu-pro h1{
+    color: #2B2A2A;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; 
+letter-spacing: -0.25px;
+}
+
+.shehu-pro p{
+    color: var(--grey-sub-text-colour, #626060);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+}
+
+.pub-hr{
+    width: 202.002px;
+border: 2px solid var(--bt);
+border-radius: 5px;
+margin-top: -1px;
+margin-bottom: 30px;
+}
+
+@media (min-width:760px) {
+    .shehu-profile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .shehu-pub p, .shehu-pub h1{
+        text-align: start;
+    }
+
+    .shehu-pub img{
+        margin: 0 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .shehu-pub button{
+        width: 20%;
+        margin-right: 20px;
+    }
+    .shehu-pro{
+        display: flex;
+        gap: 10px;
+    }
+    .shehu-pro img{
+        width: 20%;
+    }
+
+    .shehu-text{
+        width: 80%;
+        padding-top: 30px;
+    }
+    .shehu-ppp p{
+        font-size: 10px;
+        width: 60;
+    }
+    .shehu-pro h1{
+        font-size: 20px;
+    }
+    .shehu-dot{
+        margin-top: -30px;
+        font-size: 80px;
+    }
+
+    .shehu-pro-pro button{
+        height: 20px;
+    }
+    .pub-hr{
+        width: 225.002px;
+    border: 2px solid var(--bt);
+    border-radius: 5px;
+    margin-top: -1px;
+    margin-bottom: 30px;
+    }
+   
+}
+
+@media (min-width:900px) {
+    .shehu-pro img{
+        width: 40%;
+    }
+
+    .shehu-pub button{
+        width: 120px;
+    }
+    .shehu-pro-pro p{
+        font-size: 16px !important;
+    }
+
+    .shehu-pro-pro button{
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .shehu-pub{
+        margin: 50px 0px;
+    }
+    .shehu-pub img{
+        margin: 0 10px;
+        width: 200px;
+        height: 200px;
+    }   
+
+    .shehu-pub span{
+        font-size: 16px;
+    }
+
+    .shehu-pub p{
+        width: 70%;
+    }
+
+    .pub-hr{
+        width: 232.002px;
+    }
+
+    .shehu-ppp p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .shehu-pro h1{
+        font-size: 25px;
+        width: 80%;
+    }
+    .shehu-text{
+        padding-top: 60px;
+    }
+}

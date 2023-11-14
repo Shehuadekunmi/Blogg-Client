@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*{
+  font-family: 'Montserrat';
+}
+
+
+:root{
+--b1: #262DD2;
+--b2: #26D22D;
+--b3: #6726D2;
+--b4: #D22697; 
+--b5: #D2A126;
+--bt: #26BDD2;
+
+}
+ 
+.nav .bb:active{
+cursor: pointer;
+text-decoration: underline !important;
+}
+.btnn{
+  width: 40%;
+  color: #fff;
+  background: var(--bt);
+  border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+margin-left: 15px;
+}
+
+.shehu-head {
+  border: none;
+  width: 40%;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+margin-top: 0px;
+margin-left: 15px;
+}
+
+.bg-body-tertiar hr{
+  height: 200p;
+}
+.hr{
+  border:  1px solid #26BDD2;
+}
+
+.shehu-header-SignIn img{
+  width: 30%;
+}
+
+@media (min-width:760px) {
+  .shehu-head, .btnn{
+    width: 110px;
+  }
+
+  .shehu-header-SignIn{
+    width: 30%;
+  }
+}
+
+@media (min-width:900px) {
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shehu button{
+    width: 125px;
+    height: 42px;
+  }
+  .shehu{
+    height: 131px;
+  }
+
+  .shehu-header-SignIn img{
+    margin: 0 auto;
+  }
+}

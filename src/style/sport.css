@@ -1,0 +1,58 @@
+.shehu-sport{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.shehu-popular h1{
+    color: var(--black-text-colour, #2B2A2A);
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.shehu-popular button{
+    border: none;
+    display: flex;
+width: 111px;
+padding: 7px 9px;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+background: var(--b3);
+color: #fff;
+font-size: 14px;
+}
+
+.enter button{
+    width: 128px;
+    background: var(--b5);
+}
+
+.health button{
+    background: var(--b2);
+}
+
+.shehu-sport-div{
+    width: 90%;
+}
+
+.shehu-sport p{
+    font-size: 14px;
+    color: var(--black-text-colour, #2B2A2A);
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+.shehu-sport span{
+    font-size: 14px;
+    text-align: center;
+}
+
+.shehu-sport h2{
+    color: var(--black-text-colour, #2B2A2A);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 30px */
+}
