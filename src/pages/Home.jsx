@@ -1,4 +1,4 @@
-import React from 'react'
+import  { useState, useEffect } from 'react'
 import '../style/home.css'
 import hom from '../assets/hom.png'
 import hom1 from '../assets/hom1.png'
@@ -11,20 +11,31 @@ import HealthCare from '../components/HealthCare'
 import Entertainment from '../components/Entertainment'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
+import { API_URL, api } from '../requestMethods';
+import axios from 'axios'
+import { useSelector } from 'react-redux';
+import AllBlogs from '../components/AllBlogs';
+
 
 
 const Home = () => {
+ 
   return (
     <div className='container '>
         <Header/>
       <section>
+        <AllBlogs/>
         <div className='d-md-flex shehu-home'>
           <div className='shehu-home-center my-3'>
             <div>
               <h1>From You To The World</h1>
               <p>Lorem ipsum dolor sit amet consectetur. Elementum diam volutpat ultrices nisi.
                 Ligula eu aliquet sagittis sit. In justo lectus at rhoncus faucibus nulla sapien.</p>
+                <Link to='/getstarted'>
                 <button>Get Started</button>
+
+                </Link>
             </div>
           </div>
             <img src={hom} alt="" />

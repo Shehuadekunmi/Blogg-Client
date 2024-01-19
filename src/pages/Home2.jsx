@@ -14,10 +14,106 @@ import Footer from '../components/Footer'
 
 
 const Home = () => {
+
+
+  const { currentUser } = useSelector((state) => state.user);
+
+  const [sport, setSport] = useState([])
+  const [healt, setHealt] = useState([])
+  const [enterta, setEnterta] = useState([])
+  const [def, setDef] = useState([])
+  const [other, setOther] = useState([])
+  const [loading, setLoading] = useState(true);
+
+
+
+  const getHealtcare = async () => {
+    try {
+      setLoading(true);
+      const data = await axios.get(`${api}/getbloggs?enums=healthcare&limit=5`);
+      setLoading(false);
+      setHealt(data)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getDef = async () => {
+    try {
+      setLoading(true);
+      const data = await axios.get(`${api}/getbloggs?enums=selfdefence&limit=5`);
+      setLoading(false);
+      setDef(data)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getEnterta = async () => {
+    try {
+      setLoading(true);
+      const data = await axios.get(`${api}/getbloggs?enums=lifestyle&limit=5`);
+      setLoading(false);
+      setEnterta(data)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const getOther = async () => {
+    try {
+      setLoading(true);
+      const data = await axios.get(`${api}/getbloggs?enums=other&limit=5`);
+      setLoading(false);
+      setOther(data)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+  const getSport = async () => {
+    try {
+      setLoading(true);
+      const data = await axios.get(`${api}/getbloggs`);
+      setLoading(false)
+      setSport(data)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getHealtcare();
+    getDef();
+    getEnterta();
+    getOther();
+    getSport();
+  }, [])
+
+  
+
+
+
+
+
+
   return (
     <div className='container '>
         <HeaderSignIn/>
       <section>
+
+
+      <div>
+        {
+          sport.map((s) => {
+            const {title} = s;
+            return(
+              <div key={s}>{title}</div>
+            )
+          })
+        }
+       </div>
+
         <div className='d-md-flex shehu-home'>
           <div className='shehu-home-center my-3'>
             <div>

@@ -8,7 +8,7 @@ import GetStarted from './pages/GetStarted'
 import SignIn from './pages/SignIn'
 import SinglePage from './pages/SinglePage'
 import CreateBlog from './pages/CreateBlog'
-import Published from './pages/Published'
+import Published from './pages/Profile'
 import Home2 from './pages/Home2'
 import SinglePage2 from './pages/SinglePage2'
 

@@ -14,7 +14,11 @@
 --bt: #26BDD2;
 
 }
- 
+
+.currentuser{
+  width:100px;
+}
+
 .nav .bb:active{
 cursor: pointer;
 text-decoration: underline !important;

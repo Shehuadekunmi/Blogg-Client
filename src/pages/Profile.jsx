@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import HeaderSignIn from '../components/HeaderSignIn'
 
 
-const Published = () => {
+const Profile = () => {
   return (
     <div className='container'>
 
@@ -62,4 +62,4 @@ const Published = () => {
   )
 }
 
-export default Published
+export default Profile

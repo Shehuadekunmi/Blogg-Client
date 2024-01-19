@@ -1,0 +1,87 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+    currentUser: null,
+    error: null,
+    loading: false,
+}
+
+const userSlice = createSlice({
+    name: "user",
+    initialState,
+    reducers: {
+        registerStart: (state) => {
+            state.loading = true; 
+        },
+        registerSuccess: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+            state.error = false;
+        },
+        registerFailure: (state) => {
+            state.error = true;
+            state.loading = false;
+        },
+
+        signinStart: (state) => {
+            state.loading = true;
+        },
+        signinSuccess: (state, action) => {
+            state.currentUser= action.payload;
+            state.loading = false;
+            state.error = null;
+        },
+        signinFailure: (state, action) => {
+            state.error = action.payload;
+            state.loading = false;
+        },
+
+        updateUserStart: (state) => {
+            state.loading = true;
+        },
+        updateUserSuccess: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+            state.error = null;
+        },
+        updateUserFailure: (state, action) => {
+            state.error = action.payload;
+            state.loading = false;
+
+        },
+
+        deleteUserStart: (state) => {
+            state.loading = true;
+        },
+        deleteUserSuccess: (state) => {
+            state.currentUser = null;
+            state.loading = false;
+            state.error = null;
+        },
+        deleteUserFailure: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+        },
+
+        sighOutUserStart: (state) => {
+            state.loading = true;
+        },
+        sighOutUserSuccess: (state) => {
+            state.currentUser = null;
+            state.loading = false;
+            state.error = null;
+        },
+        sighOutUserFailure: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+        },
+
+
+    },
+});
+
+export const { signinStart, signinSuccess, signinFailure, updateUserStart, updateUserSuccess, updateUserFailure, deleteUserStart,
+     deleteUserSuccess, deleteUserFailure, sighOutUserStart, sighOutUserSuccess, sighOutUserFailure,
+    registerStart, registerSuccess, registerFailure } = userSlice.actions;
+     
+     export default userSlice.reducer;
